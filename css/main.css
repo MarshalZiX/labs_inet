@@ -79,7 +79,7 @@ a:hover{
     border-color:black;
     background-color:black;
     color:white;
-    margin-left: 20%;
+    margin-left: 15%;
 }
 
 .main-description{
@@ -160,4 +160,33 @@ a:hover{
 
 #questions{
     background-color: rgb(243,244,249);
+}
+
+/* footer */
+
+.footer-inner{
+    align-self: center;
+    text-align: center;
+    padding: 40px 40px 20px 40px;
+    background-color: black
+}
+
+.footer-link{
+    color: white;
+    font-size: 18px;
+}
+
+.copyright{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    color:white;
+    font-family: 'Poiret One';
+}
+
+.stankin{
+    text-align: left;
+}
+
+.author{
+    text-align: right;
 }

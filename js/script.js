@@ -7,4 +7,15 @@ $(document).ready(function(){
         }, 800);
         return False;
     });
+
+    $(window).scroll(function(){
+		if($(window).scrollTop()>320){
+			$('.depiction').fadeIn('slow','linear');
+        }
+        else {
+        // длительность анимации - 'fast'
+        // тип анимации -  'swing'
+        $('.depiction').fadeOut('fast','swing');
+        }
+	});
 });
