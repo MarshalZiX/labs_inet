@@ -152,6 +152,38 @@ a:hover{
     background-color: rgb(243,244,249);
 }
 
+.lab2{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+    align-content: center;
+}
+
+.lab2-depiction{
+    align-self: center;
+    text-align: center;
+}
+
+.lab2-title{
+    font-family: 'Poiret One';
+    font-size: 20pt;
+    text-align: center;
+}
+
+.lab2-site-title{
+    margin-top: 40px;
+    font-family: 'Poiret One';
+    font-size: 20pt;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.lab2-depiction a{
+    border: 0 none;
+    box-shadow: 0 6px 10px 8px rgba(0, 0, 0, 0.15);     
+}
+
 /* 4 page */
 
 
