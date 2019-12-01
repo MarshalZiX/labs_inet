@@ -44,7 +44,7 @@ a:hover{
 }
 
 .section-inner{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .menu{
@@ -180,13 +180,148 @@ a:hover{
 }
 
 .lab2-depiction a{
+    max-width: 100%;
     border: 0 none;
     box-shadow: 0 6px 10px 8px rgba(0, 0, 0, 0.15);     
 }
 
+.lab2-description{
+    padding: 20px 170px 0px 170px;
+    font-size: 18pt;
+    font-family: 'Poiret One';
+    text-align: justify;
+
+}
+
+.lab2-developer{
+    margin: 40px 0px 120px 0px;
+}
+
+.lab2-developer-title{
+    font-family: 'Poiret One';
+    font-size: 20pt;
+}
+
+.lab2-developer-depiction{
+    padding: 20px 170px 0px 170px;
+    font-size: 18pt;
+    font-family: 'Poiret One';
+    text-align: justify;
+}
+
 /* 4 page */
+#portfolio {
+    width: 100%;
+    min-height: 100vh;
+    background: #ffffff;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 120px;
+    margin-left: 3vw;
+  }
+  
+  .project {
+    position: relative;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    max-width: 400px;
+    border: 0 none;
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  }
+  .project img {
+    position: absolute;
+    opacity: 0.9;
+  }
+  .project p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 1em 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 3;
+  }
 
-
+  
+  .project:hover .grid__overlay {
+    transform: translateY(0%);
+  }
+  
+  .grid__overlay {
+    background: rgba(124, 124, 124, 0.9);
+    height: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    transform: translateY(101%);
+    transition: all 0.3s ease-in-out;
+  }
+  .grid__overlay button {
+    background: none;
+    outline: none;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+  .grid__overlay button:hover {
+    transition: all 0.3s ease-in-out;
+    background: #ffffff;
+    color: rgb(92, 92, 92);
+    transform: scale(1.05);
+  }
+  
+  .overlay {
+    position: fixed;
+    background: rgba(71, 69, 69, 0.7);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 3;
+  }
+  
+  .overlay.open {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .overlay__inner {
+    background: #ffffff;
+    width: 700px;
+    padding: 20px;
+    position: relative;
+    opacity: 1;
+  }
+  
+  .close {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    background: none;
+    outline: 0;
+    color: #474545;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .close:hover {
+    color: rgb(100, 100, 100);
+  }
+  
+  .project__image {
+    margin-left: -60%;
+  }
 
 /* last page */
 
